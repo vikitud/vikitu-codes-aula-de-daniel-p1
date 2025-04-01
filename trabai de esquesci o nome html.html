@@ -15,13 +15,6 @@
         padding: 8px;
         text-align: left;
     }   
-    .lista_legal { 
-        
-        background-color: rgb(152, 172, 238);
-        margin: 10px;
-        text-align: center;
-        line-height: 100px
-    }
 </style>
 <body>
 
@@ -86,12 +79,36 @@
          <li>SMTP (simple mail transfer protocol)  é um protocolo de email que determina como são enviadas mensagens de email </li> 
          <li>SFTP (Simple Transfer Protocol) onsiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos</li>
       </ol>
-      
+
     </div>
 
-
-
-
+        <form method="post" action="obrigado.html">
+            <label>nome:</label>
+                <input type="text" name="nome" required>
+            <br>
+            <label>email:</label>
+                <input type="email" name="email" required><br>
+            <label>senha:</label>
+                <input type="password" name="senha" required>
+            <br>
+            <label>assunto:</label>
+                <select name="assunto" required>
+                    <option value="reclamação">reclamação</option>
+                    <option value="elogio" selected>elogio</option>
+                    <option value="sugestão">sugestão</option>
+                </select>
+            <br>
+            <label>mensagens:</label>
+                <textarea name="mensagem"> </textarea>
+            <br>
+            <input type="checkbox" name="veiculo" value="bike" required>
+            <label for="vehicle1">Concordo
+                com os Termos de Privacidade do Site</label><br>
+            <label>idade:</label>
+            <input type="number" type="idade" name="idade" required> <br>
+            <input type="reset"  value="apagar">
+            <input type="submit" value="enviar"><br>
+        </form>
 
 </body>
 </html>
